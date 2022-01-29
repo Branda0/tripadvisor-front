@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Import script contact form -->
+    <script src="./assets/js/contact.js"></script>
+
+    <!-- Import d'axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!-- Import du CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/stylesheet.css" />
+    <link rel="stylesheet" href="./assets/css/icon-fonts.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+    <title>Tripadvisor</title>
+</head>
+
+
+
+
+<body>
+
+
+    <!-- CONTACT FORM -->
+    <div id="form" class="form-background">
+        <div class="form-container">
+            <h2>Formulaire de contact</h2>
+            <i id="icon-close" class="icon-close"></i>
+            <form class=contact-form id=contact-form>
+                <input type="text" placeholder="Prénom" id="first-name">
+                <input type="text" placeholder="Nom" id="last-name">
+                <input type="email" placeholder="Email" id="email">
+                <textarea placeholder="Écrivez ici votre message" id="message" rows="8"></textarea>
+                <input type="submit" value="Envoyer" id="submit-btn">
+            </form>
+        </div>
+    </div>
+
+
+    <header>
+        <div class=container>
+            <nav class=left-header>
+                <i class="icon-menu"></i>
+                <img class=header-logo src="./assets/img/Tripadvisor_lockup_horizontal_secondary_registered.svg"
+                    alt="Logo-Tripadvisor">
+                <i class="icon-search"></i>
+                <nav class=search-bar>
+                    <i class="icon-search"></i>
+                </nav>
+            </nav>
+
+
+            <nav class=right-header>
+                <div>
+                    <i class="icon-pencil"></i>
+                    <p>Avis</p>
+                </div>
+                <div>
+                    <i class="icon-heart"></i>
+                    <p>Voyages</p>
+                </div>
+                <div>
+                    <i class="icon-alarm"></i>
+                    <p>Alertes</p>
+                </div>
+                <div>
+                    <button id="contact-btn">Contactez-nous</button>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+
+
+    <main>
+        <div class=container>
+
+            <h1> <span style="color:#FE5D5D"> Explorez</span> Tokyo</h1>
+
+            <nav class=menu-bar>
+                <div>
+                    <p>Hôtdels</p>
+                    <i class="icon-bed"></i>
+                </div>
+
+                <div>
+                    <p>Locations de vacances</p>
+                    <i class="icon-house"></i>
+                </div>
+                <div>
+                    <p>Activités</p>
+                    <i class="icon-ticket"></i>
+                </div>
+                <div>
+                    <p>Restaurants</p>
+                    <i class="icon-restaurant"></i>
+                </div>
+                <div>
+                    <p>Forums de voyage</p>
+                    <i class="icon-forums"></i>
+                </div>
+                <div>
+                    <p>Vols</p>
+                    <i class="icon-flight"></i>
+                </div>
+                <div>
+                    <p>Croisières</p>
+                    <i class="icon-boat"></i>
+                </div>
+
+                <div>
+                    <p>Plus</p>
+                    <i class="icon-plus"></i>
+                </div>
+            </nav>
+
+            <div class=photos>
+                <div class=left>
+                    <img src="./assets/img/caption.jpg" alt="photo-Tokyo-1">
+                </div>
+                <div class=right>
+                    <img src="./assets/img/caption2.jpg" alt="photo-Tokyo-2">
+                    <img src="./assets/img/caption3.jpg" alt="photo-Tokyo-3">
+                </div>
+            </div>
+
+            <nav class="text-under-photos">
+                <div class="location-path">
+                    <p>Asie</p>
+                    <svg viewBox="0 0 24 24" width="1em" height="1em" class="bDFSd d Vb ymbyq">
+                        <path d="M7.4 5.6l6.4 6.4-6.4 6.3 1.4 1.4 7.8-7.7-7.8-7.8z"></path>
+                    </svg>
+                    <p>Japon</p>
+                    <svg viewBox="0 0 24 24" width="1em" height="1em" class="bDFSd d Vb ymbyq">
+                        <path d="M7.4 5.6l6.4 6.4-6.4 6.3 1.4 1.4 7.8-7.7-7.8-7.8z"></path>
+                    </svg>
+                    <p>Kanto</p>
+                    <svg viewBox="0 0 24 24" width="1em" height="1em" class="bDFSd d Vb ymbyq">
+                        <path d="M7.4 5.6l6.4 6.4-6.4 6.3 1.4 1.4 7.8-7.7-7.8-7.8z"></path>
+                    </svg>
+                    <p>Préfecture de Tokyo</p>
+                    <svg viewBox="0 0 24 24" width="1em" height="1em" class="bDFSd d Vb ymbyq">
+                        <path d="M7.4 5.6l6.4 6.4-6.4 6.3 1.4 1.4 7.8-7.7-7.8-7.8z"></path>
+                    </svg>
+                    <p>Tokyo</p>
+                    <svg viewBox="0 0 24 24" width="1em" height="1em" class="bDFSd d Vb ymbyq">
+                        <path
+                            d="M19.324 9.175l-6.8 6.6c-.3.301-.7.301-1 0l-6.8-6.6c-.3-.3-.3-.7 0-1 .1-.101.3-.2.5-.2h13.6c.4 0 .7.3.7.7 0 .2-.1.399-.2.5z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <p>Visiter : Tokyo</p>
+                </div>
+            </nav>
+            <section class=details-city>
+                <div class=left-column>
+                    <h2>Une ville sans cesse animée et pleine de contrastes saisissants</h2>
+                    <p>Avec ses gratte-ciel futuristes, sa scène gastronomique inégalée et sa vie nocturne endiablée,
+                        Tokyo suscite une véritable poussée d’adrénaline. Cette vaste ville aux multiples facettes est
+                        réputée pour être à la pointe du progrès, mais ses anciens temples bouddhistes, ses salons de
+                        thé d’époque et ses jardins paisibles offrent une évasion sereine et un rappel émouvant de la
+                        longue histoire de la ville. Et pour les plus curieux, les petits plaisirs de Tokyo (les
+                        endroits secrets où l’on trouve des ramens, les allées commerçantes, les lieux de musique
+                        relaxante) se cachent souvent à la vue de tous.</p>
+                </div>
+                <div class=right-column>
+                    <div>
+                        <h3>Tokyo: commencez à organiser !</h3>
+                        <p>Créer un voyage pour enregistrer et organiser toutes vos idées et les visualiser sur une
+                            carte.
+                        </p>
+                        <div class=button>
+                            <p class=create-button>Créer un voyage</p>
+                        </div>
+                    </div>
+                    <img src="./assets/img/map.png" alt="">
+                </div>
+            </section>
+            <h2>Tokyo : les immanquables</h2>
+            <div class=caroussel-container>
+
+                <section class=caroussel>
+                    <section class=caroussel-title>
+                        <h4>Se divertir</h4>
+                        <p>Des lieux à voir, des rues à explorer et des expériences emblématiques à Tokyo.</p>
+                        <a href="" style="color:inherit;">Tout afficher</a>
+                    </section>
+                    <section class=caroussel-scroll>
+
+                        <div class="caroussel-item">
+                            <div class=img-container>
+                                <img src="./assets/img/caroussel/divertir/1.jpg" alt="">
+                                <img src="./assets/img/logo.svg" alt="">
+                                <i class="icon-heart"></i>
+                            </div>
+                            <div class=txt-container>
+                                <p>Senso-ji Temple</p>
+                            </div>
+                        </div>
+
+                        <div class="caroussel-item">
+                            <div class=img-container>
+                                <img src="./assets/img/caroussel/divertir/2.jpg" alt="">
+                                <img src="./assets/img/logo.svg" alt="">
+                                <i class="icon-heart"></i>
+                            </div>
+                            <div class="txt-container">
+                                <p>Ueno Park</p>
+                            </div>
+                        </div>
+
+                        <div class="caroussel-item">
+                            <div class=img-container>
+                                <img src="./assets/img/caroussel/divertir/3.jpg" alt="">
+                                <img src="./assets/img/logo.svg" alt="">
+                                <i class="icon-heart"></i>
+                            </div>
+                            <div class=txt-container>
+                                <p>Akihabara</p>
+                            </div>
+                        </div>
+
+                        <div class="caroussel-item">
+                            <div class=img-container>
+                                <img src="./assets/img/caroussel/divertir/4.jpg" alt="">
+                                <img src="./assets/img/logo.svg" alt="">
+                                <i class="icon-heart"></i>
+                            </div>
+                            <div class=txt-container>
+                                <p>Meiji-jinguū</p>
+                            </div>
+                        </div>
+
+                        <div class="caroussel-item">
+                            <div class=img-container>
+                                <img src=" ./assets/img/caroussel/divertir/5.jpg" alt="">
+                                <img src="./assets/img/logo.svg" alt="">
+                                <i class="icon-heart"></i>
+                            </div>
+                            <div class=txt-container>
+                                <p>Shinjuku Gyoen National Garden</p>
+                            </div>
+
+                        </div>
+
+                        <div class="caroussel-item">
+                            <div class=img-container>
+                                <img src=" ./assets/img/caroussel/divertir/6.jpg" alt="">
+                                <img src="./assets/img/logo.svg" alt="">
+                                <i class="icon-heart"></i>
+                            </div>
+                            <div class=txt-container>
+                                <p>Musée Ghibli</p>
+                            </div>
+
+                        </div>
+
+                        <div class="caroussel-item">
+                            <div class=img-container>
+                                <img src=" ./assets/img/caroussel/divertir/7.jpg" alt="">
+                                <img src="./assets/img/logo.svg" alt="">
+                                <i class="icon-heart"></i>
+                            </div>
+                            <div class=txt-container>
+                                <p>Shimokitazawa</p>
+                            </div>
+
+                        </div>
+
+                        <div class="caroussel-item">
+                            <div class=img-container>
+                                <img src=" ./assets/img/caroussel/divertir/8.jpg" alt="">
+                                <img src="./assets/img/logo.svg" alt="">
+                                <i class="icon-heart"></i>
+                            </div>
+                            <div class=txt-container>
+                                <p>Nakano Broadway</p>
+                            </div>
+
+                        </div>
+
+                        <div class="caroussel-item">
+                            <div class=img-container>
+                                <img src=" ./assets/img/caroussel/divertir/9.jpg" alt="">
+                                <img src="./assets/img/logo.svg" alt="">
+                                <i class="icon-heart"></i>
+                            </div>
+                            <div class=txt-container>
+                                <p>Musée d'Edo-Tokyo</p>
+                            </div>
+
+                        </div>
+
+                        <div class="caroussel-item">
+                            <div class=img-container>
+                                <img src=" ./assets/img/caroussel/divertir/10.jpg" alt="">
+                                <img src="./assets/img/logo.svg" alt="">
+                                <i class="icon-heart"></i>
+                            </div>
+                            <div class=txt-container>
+                                <p>Kabukiza Theater</p>
+                            </div>
+                        </div>
+
+                    </section>
+                </section>
+
+
+                <!-- DEUX SECTIONS COMMENTEES AVANT MODIFS -->
+                <!-- <section>
+                    <section class=left-text>
+                        <h4>Se reposer</h4>
+                        <p>Un mélange de charme, de symboles et de modernité.</p>
+                        <a href="" style="color:inherit;">Tout afficher</a>
+                    </section>
+                    <section class=right-caroussel>
+                        <div>
+                            <div class=img-container>
+                                <img src="./assets/img/caroussel/reposer/1.jpeg" alt="">
+                                <img src="./assets/img/logo.svg" alt="">
+                                <div heart-svg>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                            <p>HOSHINOYA Tokyo</p>
+                        </div>
+                        <div>
+                            <div class=img-container>
+                                <img src="./assets/img/caroussel/reposer/2.jpeg" alt="">
+                                <img src="./assets/img/logo.svg" alt="">
+                                <div heart-svg>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                            <p>The Prince Gallery Tokyo Kioicho, A Luxury Collection Hotel</p>
+                        </div>
+
+                        <div>
+                            <div class=img-container>
+                                <img src="./assets/img/caroussel/reposer/3.jpeg" alt="">
+                                <img src="./assets/img/logo.svg" alt="">
+                                <div heart-svg>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                            <p>Aman Tokyo</p>
+                        </div>
+
+                        <div>
+                            <div class=img-container>
+                                <img src="./assets/img/caroussel/reposer/4.jpeg" alt="">
+                                <img src="./assets/img/logo.svg" alt="">
+                                <div heart-svg>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+
+                            <p>The Tokyo Station Hotel</p>
+                        </div>
+
+                        <div>
+                            <div class=img-container>
+                                <img src=" ./assets/img/caroussel/reposer/5.jpeg" alt="">
+                                <img src="./assets/img/logo.svg" alt="">
+                                <div heart-svg>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+
+                            <p>Park Hyatt Tokyo</p>
+                        </div>
+
+                        <div>
+                            <div class=img-container>
+                                <img src=" ./assets/img/caroussel/reposer/6.jpeg" alt="">
+                                <img src="./assets/img/logo.svg" alt="">
+                                <div heart-svg>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+
+                            <p>Mandarin Oriental Tokyo</p>
+                        </div>
+
+                        <div>
+                            <div class=img-container>
+                                <img src=" ./assets/img/caroussel/reposer/7.jpeg" alt="">
+                                <img src="./assets/img/logo.svg" alt="">
+                                <div heart-svg>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+
+                            <p>Claska</p>
+                        </div>
+
+                        <div>
+                            <div class=img-container>
+                                <img src=" ./assets/img/caroussel/reposer/8.jpeg" alt="">
+                                <img src="./assets/img/logo.svg" alt="">
+                                <div heart-svg>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+
+                            <p>The Peninsula Tokyo</p>
+                        </div>
+
+                        <div>
+                            <div class=img-container>
+                                <img src=" ./assets/img/caroussel/reposer/9.jpeg" alt="">
+                                <img src="./assets/img/logo.svg" alt="">
+                                <div heart-svg>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+
+                            <p>Musée d'Edo-Tokyo</p>
+                        </div>
+
+                        <div>
+                            <div class=img-container>
+                                <img src=" ./assets/img/caroussel/reposer/10.jpeg" alt="">
+                                <img src="./assets/img/logo.svg" alt="">
+                                <div heart-svg>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                            <p>Kabukiza Theater</p>
+                        </div>
+                    </section>
+
+
+                </section>
+                <section>
+                    <section class=left-text>
+                        <h4>Se restaurer</h4>
+                        <p>Des restaurants et bars typiques, et plus encore à Tokyo.</p>
+                        <a href="" style="color:inherit;">Tout afficher</a>
+                    </section>
+                    <section class=right-caroussel>
+                        <div>
+                            <div class=img-container>
+                                <img src="./assets/img/caroussel/restaurer/1.jpeg" alt="">
+                                <img src="./assets/img/logo.svg" alt="">
+                                <div heart-svg>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                            <p>Den</p>
+                        </div>
+                        <div>
+                            <div class=img-container>
+                                <img src="./assets/img/caroussel/restaurer/2.jpeg" alt="">
+                                <img src="./assets/img/logo.svg" alt="">
+                                <div heart-svg>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                            <p>Afuri</p>
+                        </div>
+                        <div>
+                            <div class=img-container>
+                                <img src="./assets/img/caroussel/restaurer/3.jpeg" alt="">
+                                <img src="./assets/img/logo.svg" alt="">
+                                <div heart-svg>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                            <p>Akasaka Kikunoi</p>
+                        </div>
+                        <div>
+                            <div class=img-container>
+                                <img src="./assets/img/caroussel/restaurer/4.jpeg" alt="">
+                                <img src="./assets/img/logo.svg" alt="">
+                                <div heart-svg>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                            <p>Narisawa</p>
+                        </div>
+                        <div>
+                            <div class=img-container>
+                                <img src=" ./assets/img/caroussel/restaurer/5.jpeg" alt="">
+                                <img src="./assets/img/logo.svg" alt="">
+                                <div heart-svg>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                            <p>Butagumi</p>
+                        </div>
+                        <div>
+                            <div class=img-container>
+                                <img src=" ./assets/img/caroussel/restaurer/6.jpeg" alt="">
+                                <img src="./assets/img/logo.svg" alt="">
+                                <div heart-svg>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                            <p>Sushi Tou</p>
+                        </div>
+                        <div>
+                            <div class=img-container>
+                                <img src=" ./assets/img/caroussel/restaurer/7.jpeg" alt="">
+                                <img src="./assets/img/logo.svg" alt="">
+                                <div heart-svg>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                            <p>Ishikawa</p>
+                        </div>
+                        <div>
+                            <div class=img-container>
+                                <img src=" ./assets/img/caroussel/restaurer/8.jpeg" alt="">
+                                <img src="./assets/img/logo.svg" alt="">
+                                <div heart-svg>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                            <p>Kotaro</p>
+                        </div>
+                        <div>
+                            <div class=img-container>
+                                <img src=" ./assets/img/caroussel/restaurer/9.jpeg" alt="">
+                                <img src="./assets/img/logo.svg" alt="">
+                                <div heart-svg>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                            <p>Tempura Kondo</p>
+                        </div>
+                        <div>
+                            <div class=img-container>
+                                <img src=" ./assets/img/caroussel/restaurer/10.jpeg" alt="">
+                                <img src="./assets/img/logo.svg" alt="">
+                                <div heart-svg>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                            <p>Roast Beef Ohno Akihabara</p>
+                        </div>
+                    </section>
+                </section> -->
+                <!-- DEUX SECTIONS COMMENTEES AVANT MODIFS -->
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="./assets/img/logo.svg" alt="">
+        <h5> Made at <span>Le Reacteur</span> by <span>Gabriel Brandao</span></h5>
+    </footer>
+</body>
+
+</html>

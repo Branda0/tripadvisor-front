@@ -1,0 +1,486 @@
+:root {
+  --container-max-width: 1136px;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  box-sizing: border-box;
+  font-family: "Trip Sans Reg", serif;
+  width: 100vw;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+i {
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+p {
+  font-family: "Trip Sans Reg";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 800;
+}
+
+/* CONTACT FORM */
+
+.form-background {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.form-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  width: 450px;
+  height: 500px;
+  position: fixed;
+}
+
+.contact-form {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin: 20px 40px; */
+  /* position: relative; */
+}
+.contact-form > * {
+  font-family: inherit;
+  background-color: whitesmoke;
+  width: 100%;
+  /* padding-bottom: 50px; */
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  border: #333333 2px solid;
+}
+
+.contact-form #submit-btn {
+  width: 50%;
+  margin-top: 25px;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #fe5d5d;
+  color: white;
+  border: none;
+}
+.contact-form #submit-btn:hover {
+  opacity: 80%;
+}
+
+.form-container h2 {
+  font-size: 24px;
+}
+.form-container i {
+  font-size: 15px;
+  font-weight: bolder;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  /* background-color: red; */
+}
+
+.show {
+  display: flex;
+}
+
+.contact-form input,
+.contact-form textarea {
+  /* width: 70%; */
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+}
+
+/* HEADER */
+header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+header .container {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* LEFT HEADER*/
+.left-header {
+  width: 100%;
+  display: flex;
+}
+
+.icon-menu,
+.left-header > .icon-search {
+  display: none;
+}
+
+.header-logo {
+  width: 188px;
+}
+.search-bar {
+  max-width: 350px;
+  width: 100%;
+  /* flex: 35%; */
+  border: rgba(209, 209, 209, 0.884) solid 2px;
+  border-radius: 20px;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar i {
+  font-size: 22px;
+  margin-left: 10px;
+}
+
+/* RIGHT HEADER */
+.right-header {
+  display: flex;
+}
+
+.right-header div:not(:last-child) {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  color: black;
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 8px;
+}
+
+.right-header div:not(:last-child):hover {
+  background-color: #ededed;
+}
+
+/* .right-header div:nth-child(4) {
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 20px; */
+/* } */
+.right-header button {
+  margin-left: 10px;
+  font-size: 15px;
+  white-space: nowrap;
+  border: none;
+  background-color: black;
+  color: white;
+  /* padding: 15px; */
+  height: 42px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.right-header button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* MAIN */
+
+h1 {
+  padding-top: 50px;
+  font-size: 54px;
+  font-family: "Trip Sans Med";
+  font-weight: 800;
+}
+h2 {
+  font-family: "Trip Sans Med";
+  font-weight: bold;
+  line-height: 33px;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+h3 {
+  font-family: "Trip Sans Reg";
+  font-weight: bold;
+  margin-bottom: 16px;
+  font-size: 30px;
+}
+.menu-bar {
+  display: flex;
+  gap: 10px;
+  border-radius: 2px red solid;
+  margin: 20px 0;
+}
+.menu-bar div {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 12px;
+  padding-left: 12px;
+  display: flex;
+  align-items: center;
+  width: 16.66%;
+  border: black solid 1px;
+  border-radius: 10px;
+}
+
+.menu-bar div:nth-child(6),
+.menu-bar div:nth-child(7) {
+  display: none;
+}
+
+.menu-bar div:hover {
+  color: white;
+  background-color: black;
+  fill: white;
+}
+.menu-bar p {
+  flex: 3;
+  line-height: 20px;
+  margin-right: 10px;
+}
+
+.menu-bar svg {
+  flex: 1;
+}
+
+.photos {
+  display: flex;
+  height: 430px;
+}
+
+.photos img:hover {
+  opacity: 80%;
+}
+
+.left {
+  flex: 1.36;
+}
+.left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2px;
+  overflow: hidden;
+}
+
+.right img {
+  object-fit: cover;
+  height: 50%;
+}
+
+.right img:first-child {
+  margin-bottom: 3px;
+}
+
+.text-under-photos {
+  font-size: 12px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.text-under-photos p {
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.location-path p:hover {
+  text-decoration: underline;
+}
+
+.location-path {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+
+.details-city {
+  display: flex;
+  gap: 100px;
+  margin-bottom: 60px;
+}
+.left-column {
+  flex: 4;
+}
+
+.left-column p {
+  font-size: 18px;
+  font-family: Georgia;
+  font-weight: 100;
+  font-style: normal;
+  line-height: 22px;
+}
+
+.right-column {
+  flex: 3;
+}
+
+.right-column div:first-child {
+  border-start-start-radius: 10px;
+  border-start-end-radius: 10px;
+  background-color: #fd5d5d;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.right-column p {
+  font-size: 15px;
+  font-weight: 100;
+  font-style: normal;
+  line-height: 24px;
+}
+
+.right-column img {
+  width: 100%;
+  object-fit: cover;
+  border-end-end-radius: 10px;
+  border-end-start-radius: 10px;
+  /* height: 100%; */
+}
+
+.create-button {
+  background-color: #333333;
+  border-radius: 20px;
+  color: white;
+  padding: 15px;
+  /* align-items: center; */
+}
+
+.button {
+  display: flex;
+  margin-top: 20px;
+}
+
+h4 {
+  font-family: "Trip Sans Reg";
+  font-weight: bold;
+  line-height: 29px;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.caroussel {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  height: 250px;
+  display: flex;
+}
+
+.caroussel-title {
+  flex: 25%;
+  margin-right: 20px;
+}
+.caroussel-title p {
+  font-size: 18px;
+  font-family: Georgia;
+  font-weight: 100;
+  font-style: normal;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+
+.caroussel-scroll {
+  flex: 75%;
+  display: flex;
+  overflow: hidden;
+  overflow-x: scroll;
+  gap: 2%;
+}
+
+.caroussel-item {
+  flex: 32%;
+  flex-shrink: 0;
+}
+
+.caroussel-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.img-container {
+  height: 80%;
+  position: relative;
+}
+
+.txt-container {
+  height: 20%;
+}
+
+.img-container img:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img-container img:nth-child(1):hover {
+  opacity: 80%;
+}
+
+.img-container img:nth-child(2) {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 8px;
+  bottom: 8px;
+}
+
+.img-container i {
+  background: white;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.caroussel-scroll p {
+  padding-top: 10px;
+  /* margin-top: 10px; */
+  font-size: 17px;
+  height: 40px;
+}
+
+footer {
+  height: 150px;
+  background: #f9f1ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h5 {
+  margin-left: 20px;
+  font-size: 20px;
+  font-family: "Trip Sans Med";
+}
+
+h5 span {
+  color: #fe5d5d;
+  font-weight: bold;
+}
