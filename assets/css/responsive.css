@@ -87,6 +87,11 @@
     flex-wrap: nowrap;
     overflow-x: scroll;
   }
+
+  .menu-bar::-webkit-scrollbar {
+    display: none;
+  }
+
   .menu-bar div {
     width: 100%;
     display: flex;

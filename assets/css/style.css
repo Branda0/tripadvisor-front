@@ -209,6 +209,11 @@ h1 {
   font-family: "Trip Sans Med";
   font-weight: 800;
 }
+
+h1 span {
+  color: #fe5d5d;
+}
+
 h2 {
   font-family: "Trip Sans Med";
   font-weight: bold;
