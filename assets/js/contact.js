@@ -22,7 +22,15 @@ document.addEventListener("DOMContentLoaded", () => {
         email: document.getElementById("email").value,
         message: document.getElementById("message").value,
       };
-      const response = await axios.post("https://brandao-tripadvisor.herokuapp.com/form", data);
+      //Heroku server deployment
+      //const response = await axios.post("https://brandao-tripadvisor.herokuapp.com/form", data);
+
+      //Ngrok local server with distant acces
+      // const response = await axios.post("https://4b68-62-34-15-7.ngrok.io/form", data);
+
+      //server local without distant acces
+      const response = await axios.post("http://localhost:3000/form", data);
+
       console.log(response.data);
       document.getElementById("submit-btn").value = "Bien envoyé 🚀";
     });

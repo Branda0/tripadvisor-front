@@ -24,11 +24,6 @@
   .photos {
     height: 372px;
   }
-  .right {
-    /* flex: 1; */
-    /* width: 402px; */
-    /* flex-grow: 1; */
-  }
 }
 
 @media (max-width: 1024px) {
@@ -45,20 +40,21 @@
 }
 
 @media (max-width: 768px) {
-  /* .container {
-    margin: 0 50px;
-  }
-
-  .container > div {
-    background-color: aquamarine;
-    margin: 0 0px;
-  } */
-
-  /* .container */
-
   h1 {
     font-size: 34px;
     font-weight: bold;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 20px;
   }
 
   /* HEADER */
@@ -83,10 +79,12 @@
   /* MENU NAV BAR */
 
   .menu-bar {
-    /* display: flex; */
+    margin-left: -20px;
+    padding-left: 20px;
+    margin-right: -20px;
+    position: relative;
     height: 40px;
     flex-wrap: nowrap;
-    overflow: hidden;
     overflow-x: scroll;
   }
   .menu-bar div {
@@ -94,13 +92,68 @@
     display: flex;
     white-space: nowrap;
   }
-  .menu-bar div p {
-    /* height: 50px; */
-    /* width: 100%; */
-  }
 
   /* PHOTOS */
-  .right {
-    flex: 0;
+  .photos {
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+
+  .photos .right {
+    display: none;
+  }
+
+  .text-under-photos p {
+    font-size: 11px;
+  }
+
+  .text-under-photos .location-city {
+    display: none;
+  }
+
+  /* CITY DETAILS */
+  .details-city {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  /* CAROUSSEL */
+  .caroussel {
+    /* border: 3px solid grey; */
+    height: 400px;
+    flex-direction: column;
+  }
+
+  .caroussel-title {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .caroussel-title p {
+    font-size: 16px;
+  }
+
+  .caroussel-scroll .caroussel-item {
+    flex: 80%;
+    flex-shrink: 0;
+  }
+
+  /* BOTTOM CAROUSSEL */
+  .caroussel-scroll-bottom .item {
+    flex: 80%;
+    flex-shrink: 0;
+  }
+
+  /* FOOTER */
+  footer {
+    height: 80px;
+  }
+
+  footer img {
+    height: 30px;
+  }
+
+  footer h5 {
+    font-size: 14px;
+    margin-left: 10px;
   }
 }
