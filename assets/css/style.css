@@ -36,6 +36,7 @@ p {
   align-items: center;
   justify-content: center;
   display: none;
+  z-index: 99;
 }
 
 .form-container {
@@ -113,14 +114,22 @@ p {
 
 /* HEADER */
 header {
-  height: 60px;
+  background-color: white;
   padding-top: 10px;
   padding-bottom: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 header .container {
+  height: 60px;
   height: 100%;
   display: flex;
   justify-content: space-between;
+}
+
+.border {
+  border-bottom: 1px solid #ededed;
 }
 
 /* LEFT HEADER*/
@@ -271,7 +280,7 @@ h3 {
 }
 
 .photos img:hover {
-  opacity: 80%;
+  filter: brightness(1.2);
 }
 
 .left {
