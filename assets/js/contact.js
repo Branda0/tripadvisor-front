@@ -31,8 +31,11 @@ document.addEventListener("DOMContentLoaded", () => {
       //server local without distant acces
       const response = await axios.post("http://localhost:3000/form", data);
 
-      console.log(response.data);
-      document.getElementById("submit-btn").value = "Bien envoyé 🚀";
+      if (response.data.error === undefined) {
+        document.getElementById("submit-btn").value = "Bien envoyé 👍";
+      } else {
+        document.getElementById("submit-btn").value = "Erreur ❌";
+      }
     });
   });
 });
