@@ -3,7 +3,7 @@
 Basic static clone of the tripadvisor Tokyo page.  
 Purely visual, the only clickable area is the Header button "Contactez-nous" wich opens a contact/mailing modal.
 
-<img src="/assets/readme/mobile.jpg" alt="mobile-screenshot" width="20%" /><img style="float: right;" src="/assets/readme/laptop2.png" alt="laptop-screenshot-1" width="72%" />
+<img src="/assets/readme/mobile.png" alt="mobile-screenshot" width="20%" /><img style="float: right;" src="/assets/readme/laptop2.png" alt="laptop-screenshot-1" width="72%" />
 
 ## Stack
 
