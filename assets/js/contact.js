@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         message: document.getElementById("message").value,
       };
       //Heroku server deployment
-      const response = await axios.post("https://brandao-tripadvisor.herokuapp.com/form", data);
+      const response = await axios.post("https://brandao-tripadvisor.up.railway.app/form", data);
       //Ngrok local server with distant acces
       // const response = await axios.post("https://4b68-62-34-15-7.ngrok.io/form", data);
 
