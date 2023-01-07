@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //EVENT SUBMIT FORM
     document.getElementById("contact-form").addEventListener("submit", async (event) => {
-      event.preventDefault();
+      // event.preventDefault();
 
       const data = {
         firstname: document.getElementById("first-name").value,
@@ -22,8 +22,12 @@ document.addEventListener("DOMContentLoaded", () => {
         email: document.getElementById("email").value,
         message: document.getElementById("message").value,
       };
-      //Heroku server deployment
-      const response = await axios.post("https://brandao-tripadvisor.up.railway.app/form", data);
+
+      //railway server deployment
+      //
+      //Bypassing the backend call as the server is no longer deployed
+      //const response = await axios.post("https://brandao-tripadvisor.up.railway.app/form", data);
+
       //Ngrok local server with distant acces
       // const response = await axios.post("https://4b68-62-34-15-7.ngrok.io/form", data);
 

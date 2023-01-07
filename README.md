@@ -10,7 +10,7 @@ Purely visual, the only clickable area is the Header button "Contactez-nous" wic
 
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![VANILLA JS](https://img.shields.io/badge/VANILLA_JS-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)   
+![VANILLA JS](https://img.shields.io/badge/VANILLA_JS-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)  
 ![AXIOS](https://img.shields.io/badge/AXIOS-671CDE?style=flat)
 
 ## Features
@@ -25,6 +25,6 @@ Purely visual, the only clickable area is the Header button "Contactez-nous" wic
 
 > https://tripadvisor-brandao.netlify.app/
 
-#### Back-end (Deployed on Heroku)
+#### Back-end
 
 > repository ➡️ https://github.com/Branda0/tripadvisor-back
